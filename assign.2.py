@@ -1,5 +1,4 @@
-# -*- coding: cp1252 -*-
-'''print("********************ASSIGNMENT-2******************")
+print("********************ASSIGNMENT-2******************")
 print("1.")
 def factorial(n):
     if n == 0:
@@ -153,7 +152,7 @@ print("16.")
 d=set1.symmetric_difference(set2)
 print(d)
 print(set1.difference(set2))
-print(ì18.î)
+print(‚Äú18.‚Äù)
 t1=((10,10,10,12),(30,45,56,45),(81,80,39,32),(1,2,3,4))
 t2=[]
 n=4
@@ -196,7 +195,7 @@ print(nested_dictionary(student_id, student_name, student_grade))
 print("17.")
 L = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
 L = [t for t in L if t]
-print(L)'''
+print(L)
 print("19.")
 lower, upper, special, digit = 0, 0, 0, 0
 password = input("Enter your password")
