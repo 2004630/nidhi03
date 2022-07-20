@@ -1,5 +1,5 @@
 # -*- coding: cp1252 -*-
-print("********************ASSIGNMENT-2******************")
+'''print("********************ASSIGNMENT-2******************")
 print("1.")
 def factorial(n):
     if n == 0:
@@ -196,7 +196,7 @@ print(nested_dictionary(student_id, student_name, student_grade))
 print("17.")
 L = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
 L = [t for t in L if t]
-print(L)
+print(L)'''
 print("19.")
 lower, upper, special, digit = 0, 0, 0, 0
 password = input("Enter your password")
