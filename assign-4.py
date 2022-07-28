@@ -70,7 +70,7 @@ class NegativeAgeException(RuntimeError):
         def __init__(self, age):
                 super().__init__()
                 self.age = age
-        def status(age):
+def status(age):
                 if age<0:
                         raise NegativeAgeException("Only positive integers are allowed")
                 if age>22:
@@ -87,7 +87,7 @@ except:
 #ouput:
 '''Enter your age: 
   45
-  something is wrong'''
+  Eligible for mrg'''
 print("5.")
 class TooYoungException(Exception):
         def __init__(self,age):
