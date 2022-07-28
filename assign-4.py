@@ -15,8 +15,11 @@ class lion(Tiger):
     def eat2(self):
         print("lion implementation ...")
 t=lion()
-t.eat1()
+t.eat1()    
 t.eat2()
+#output:
+'''Tiger implementation ...
+lion implementation ...'''
 print("2.")
 from abc import ABC, abstractmethod
 class  AbstractClassExample(ABC):
@@ -39,6 +42,9 @@ x = DoAdd(10)
 y = DoMul(10)
 print(x.do_something())
 print(y.do_something())
+#output:
+'''52
+  420'''
 print("3.")
 def status(age):
         if age < 0:
@@ -54,6 +60,11 @@ except ValueError:
         print("Only positive integers are allowed you ......")
 finally:
         print("finally block....")
+#output:
+'''Enter your age: 
+  45
+  eligible for mrg
+  finally block....'''
 print("4.")
 class NegativeAgeException(RuntimeError):
         def __init__(self, age):
@@ -73,6 +84,10 @@ except NegativeAgeException:
         print("Only positive integers are allowed")
 except:
         print("something is wrong")
+#ouput:
+'''Enter your age: 
+  45
+  something is wrong'''
 print("5.")
 class TooYoungException(Exception):
         def __init__(self,age):
@@ -92,6 +107,10 @@ except TooYoungException as e:
                       print("Plz wait some time ")
 except TooOldException as e:
                       print("Your age too old ")
+#output:
+'''Enter Age:
+   56
+   we will find one girl soon'''
 print("6.")
 try:
         print("outer try block")
@@ -110,6 +129,16 @@ else:
         print("outer no excepiton")
 finally:
         print("finally block")
+#output:
+'''outer try block
+   enter a number:
+   5
+   2.0
+   inner try
+   anupreet
+   inner no exception
+   outer no excepiton
+   finally block'''
 print("7.")
 class Person(object):
         def __init__(self, first, last):
@@ -127,13 +156,16 @@ x = Person("komal", "addanki")
 y = Employee("komal", "addanki", "111")
 print(x.Name())
 print(y.GetEmployee())
+#output:
+'''komal addanki
+   komal addanki, 111'''
 print("8.")
 class Person:
         def __init__(self, first, last):
                 self.firstname = first
                 self.lastname = last
         def __str__(self):
-1                return self.firstname + " " + self.lastname
+                return self.firstname + " " + self.lastname
 class Employee(Person):
         def __init__(self, first, last, id):
                 super().__init__(first, last)
@@ -144,6 +176,9 @@ x = Person("kamalpreet", "gurpreet")
 y = Employee("kamalpreet", "gurpreet", "111")
 print(x)
 print(y)
+#output:
+'''kamalpreet gurpreet
+   kamalpreet gurpreet 111'''
 print("9.")
 class Vehicle:
         def __del__(self):
@@ -151,6 +186,11 @@ class Vehicle:
                 print(10/0)
 v = Vehicle()
 del v
+#output:
+'''Exception ignored in: 
+    print(10/0)
+   ZeroDivisionError: division by zero
+   Vehicle object destroyed'''
 print("10.")
 class Customer:
         def __init__(self,name,bal=0.0):
@@ -172,7 +212,12 @@ c.deposit(damt)
 amt = int(input("enter amount to withdraw"))
 c.withdraw(amt)
 print(c.remaining())
-
+#output:
+'''enter amount to deposit
+   10000
+   enter amount to withdraw
+   500
+   19500'''
 
 
 
