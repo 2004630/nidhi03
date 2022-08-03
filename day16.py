@@ -1,7 +1,7 @@
 print("*************PRACTICE DAY-16*************")
 print("***********MULTI-THREADING***************")
 print("****procedural way of multi-threading for one function******")
-'''from threading import*
+from threading import*
 def f1(n):
     for x in range(n):
         print(current_thread().name,x)
@@ -59,7 +59,7 @@ class A():
             print(x)
 ob=A()
 t1=Thread(target=ob.run)
-t1.start()'''
+t1.start()
 print("**********using daemon thread***********")
 from threading import*
 import time
